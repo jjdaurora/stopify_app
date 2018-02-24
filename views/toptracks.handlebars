@@ -1,0 +1,9 @@
+{{#each track}} 
+    <pre>{{track}}</pre>
+    <img src="{{album.images.1.url}}" alt=""/>
+    <p><audio src="{{preview_url}}" controls>Play Me</audio></p>
+    <p>{{album.name}}</p>
+    <p>{{artists.name}}</p>
+    <p>{{name}}</p>
+    <hr/>
+{{/each}}

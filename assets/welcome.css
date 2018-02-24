@@ -1,0 +1,62 @@
+/*body {
+	background-image: url("flamingoOne.png");
+}*/
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+#full-size {
+    height: 100% width: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    min-width: 100%;
+}
+
+.image-container {
+    background-image: url(img/fla1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 100%);
+    box-shadow: 0px 3px 5px 12px rgb(50, 50, 50);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 250px;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#no-margin {
+    margin-bottom: 0px;
+}
