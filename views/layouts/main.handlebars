@@ -4,42 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Stopify</title>
-    {{!--
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
-    <script>
-        window.onSpotifyWebPlaybackSDKReady = () => {
-            // You can now initialize Spotify.Player and use the SDK
-            const player = new Spotify.Player({
-                name: 'Web Playback SDK Quick Start Player',
-                // getOAuthToken: cb => { cb(token); }
-            });
-            // 'use strict';
-            var play = function play(_ref) {
-                var spotify_uri = _ref.spotify_uri,
-                    _ref$playerInstance$_ = _ref.playerInstance._options,
-                    getOAuthToken = _ref$playerInstance$_.getOAuthToken,
-                    id = _ref$playerInstance$_.id;
-                // getOAuthToken(function (access_token) {
-                fetch('https://api.spotify.com/v1/me/player/play?device_id=' + id, {
-                    method: 'PUT',
-                    body: JSON.stringify({ uris: [spotify_uri] }),
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': 'Bearer BQCD3EyBHawqw4lNl9vi6vmglZF0XKKPi38JTj968GvWEERVRbHeENHLWx1KgqYFOepcDtWyE0kZWXi0Ik0KEH9m5ziN-IXtLmj2TrG63amG96Mn7Hi_dCRrLmKmPDkxGdndGWfKo1IUdagcsgE9a72bfYmcCNJNI12h9bAVCm8'
-                    }
-                });
-                // });
-            };
-            play({
-                playerInstance: new Spotify.Player({ name: "..." }),
-                spotify_uri: 'spotify:track:7xGfFoTpQ2E7fRF5lN10tr'
-            });
-        };
-    </script> --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/assets/style.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
-    {{{ body }}}
-</body>
+<div class="container">
+
+    <body>
+    
+        {{{ body }}}
+
+    </body>
+
+</div>
+
+<script text="javascript" src="../../public/assets/js/app.js"></script>
 
 </html>

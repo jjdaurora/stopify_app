@@ -1,17 +1,14 @@
+/*  */
 * {
 	margin: 0;
 	padding: 0;
 	outline: none;
 }
 
-.bg-gradient {
-	background: linear-gradient(180deg, rgb(26, 26, 26), rgb(153, 153, 153));
-}
-
-body,
-html {
+body {
 	font-family: Verdana, sans-serif;
-	min-width: 1224px;
+	max-width: 2000px;
+	background: rgb(255, 80, 80);
 }
 
 nav {
@@ -21,10 +18,9 @@ nav {
 	margin-bottom: 10px;
 }
 
-body .container {
+.container {
 	position: relative;
 	width: 620px;
-	margin: auto;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -33,8 +29,8 @@ body .container {
 .player:after {
 	position: absolute;
 	content: '';
-	width: 95%;
-	height: 15px;
+	/* width: 95%; */
+	/* height: 15px; */
 	background: rgba(0, 0, 0, 0.3);
 	display: block;
 	left: 2.5%;
@@ -45,36 +41,19 @@ body .container {
 }
 
 .player {
-	flex: 0 0 auto;
+	flex: auto;
 	position: relative;
 	width: 100%;
 	background: rgb(255, 80, 80);
 	border-radius: 11px 11px 11px 11px;
-	margin: auto;
+
 }
 
 .player-head {
-	position: relative;
-	/*height: 250px;*/
 	overflow: hidden;
 	text-align: center;
 	box-shadow: inset 0 0 110px rgba(0, 0, 0, 0.3);
 }
-
-/*.player-head:before
-{
-  position: absolute;
-  content: '';
-  width: 370px;
-  height: 200px;
-  border-radius: 9px;
-  margin-left: 25px;
-  margin-top: 81px;
-  display: block;
-  background: rgba(163,0,50,0.1);
-  box-shadow: inset 40px 40px 105px 20px rgba(0,0,0,0.1),
-              inset -40px -40px 105px 20px rgba(0,0,0,0.1);
-}*/
 
 .song-cover {
 	width: 370px;
@@ -85,14 +64,14 @@ body .container {
 
 .player-body {
 	position: relative;
-	height: 200px;
+	/* height: 200px; */
 	overflow: hidden;
 	text-align: center;
 	border-top: 1px solid rgba(111, 2, 41, 0.7);
 	background: rgba(255, 255, 255, 0.2);
 }
 
-.player-body img {
+.player-body > img {
 	margin-top: -170px;
 	filter: blur(21px);
 }
@@ -130,37 +109,28 @@ body .container {
 
 .player-controls {
 	display: block;
-	/*margin-top: 25px;*/
 }
 
 .like {
-	/*max-width: 50%;
-	display: block;*/
+
 	color: rgba(255, 255, 255, 1);
 	float: right;
 	font-size: 31px;
-	/*margin-left: 55px;*/
 	margin-right: 135px;
 	padding-right: 25px;
+	z-index:1;
 }
 
 .dislike {
-	/*max-width: 50%;
-	display: block;*/
 	color: rgba(255, 255, 255, 1);
 	font-size: 31px;
 	margin-right: 60px;
-	/*padding-top: 10px;*/
 }
 
 .player-controls i {
 	margin-right: 35px;
 }
 
-/*.player-controls i.active
-{
-  color: rgba(255,255,255,0.7);
-}*/
 
 .player-footer {
 	height: 90px;
@@ -222,15 +192,6 @@ body .container {
 	text-align: center;
 	font-size: 18px;
 	color: #ffffff;
-}
-
-.current-duration,
-.total-duration {
-	/*box-shadow: inset -40px 0 70px -40px rgba(0,0,0,0.1);*/
-}
-
-.song-controls .play {
-	/*ox-shadow: inset 90px 10px 40px -10px #8f0031;*/
 }
 
 .song-controls span .fa-play {

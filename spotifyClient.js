@@ -56,8 +56,8 @@ SpotifyClient.prototype = {
                     return reject(err);
                 }
                 // self.saveNextTracktoDb(body.items);
-                resolve(body);      
-                console.log(body);   
+                resolve(body);  
+                console.log(body)    
             });
         });
     },

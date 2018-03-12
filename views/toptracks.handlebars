@@ -1,9 +1,38 @@
-{{#each track}} 
-    <pre>{{track}}</pre>
-    <img src="{{album.images.1.url}}" alt=""/>
-    <p><audio src="{{preview_url}}" controls>Play Me</audio></p>
-    <p>{{album.name}}</p>
-    <p>{{artists.name}}</p>
-    <p>{{name}}</p>
-    <hr/>
-{{/each}}
+{{#each track}}
+    <div class="player">
+        <div class="player-head">
+            <img src="{{album.images.1.url}}" alt="cover" class="song-cover">
+        </div>
+        <div class="player-body">
+            <img src="{{album.images.1.url}}" alt="cover" class="song-cover">
+            <div class="album-info">
+                <span class="album-title">{{album.name}}</span>
+                <span class="song-title">{{name}}</span>
+                <span class="artist">{{artists.name}}</span>
+                <span class="player-controls"></span>
+                <span class="dislike">
+                    <a href="/nextTrack">
+                    <i class="far fa-frown"></i>
+                    </a>
+                </span>
+                <span class="like">
+                    <a href="/nextTrack">
+                        <i class="far fa-smile" id="like-btn"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="player-footer">
+            <div class="player-seekbar">
+                <span class="player-knot"></span>
+            </div>
+            <div class="song-controls">
+                <span class="current-duration"></span>
+                <span class="play">
+                    <audio src="{{preview_url}}" controls></audio>
+                </span>
+                <span class="total-duration"></span>
+            </div>
+        </div>
+    </div>
+ {{/each}}
